@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain-community
+chromadb
+ragas
+pydantic-settings
+python-dotenv
+pytest
+ruff
+pypdf
+tiktoken
+langsmith

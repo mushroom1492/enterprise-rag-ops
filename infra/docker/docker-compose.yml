@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ../../
+      dockerfile: infra/docker/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../../data:/app/data
+      - ../../chroma_db:/app/chroma_db
+    env_file:
+      - ../../.env
+    restart: always
+
+  # Optional: You could add a separate ChromaDB service if using the client-server mode
+  # but for simplicity, we use the embedded mode in this project.
