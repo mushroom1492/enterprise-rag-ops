@@ -127,7 +127,7 @@ make eval
 
 ## CI/CD with GitHub Actions
 
-The `.github/workflows/ci.yml` file defines the CI/CD pipeline:
+The CI/CD pipeline configuration (originally intended for `.github/workflows/ci.yml`) is provided in `infra/github-workflows/ci.yml`:
 
 -   **Linting:** Uses `ruff` to enforce code style and catch common errors.
 -   **Testing:** Runs `pytest` for unit and integration tests.
